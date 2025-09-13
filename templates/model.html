@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-        
+        <form method="post" action="/output">
             <br>
                 <label for="Married">Marital Status : </label>
         <select name="Married" id="Married" required>
@@ -41,12 +41,12 @@
             </select>
             <br>
             
-            <label for="ApplicantIncome">Applicant Income :</label>
-            <input type="text" id="ApplicantIncome" name="ApplicantIncome" placeholder="Enter your earning">
-            <br>
+          <label for="ApplicantIncome">Applicant Income :</label>
+<input type="number" id="ApplicantIncome" name="ApplicantIncome" placeholder="Enter your earning" min="0" step="100">
+<br>
 
             <label for="CoapplicantIncome">Coapplicant Income :</label>
-            <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Enter spouse income">
+            <input type="number" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Enter spouse income">
             <br>
 
             <label for="LoanAmount">Loan Amount :</label>
